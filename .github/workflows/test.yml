@@ -1,0 +1,9 @@
+name: Test CyberStorm Batch Script
+on: [push]
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Batch Script
+        run: scripts/CyberStorm_v10_Full_Complete.bat
